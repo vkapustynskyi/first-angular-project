@@ -5,7 +5,7 @@ import {AppComponent} from './app.component';
 import {HeroesComponent} from './feature/heroes/heroes.component';
 import {FormsModule} from "@angular/forms";
 import {HeroDetailComponent} from './feature/heroes/hero-detail/hero-detail.component';
-import {MessageComponent} from "./feature/heroes/message.component";
+import {MessageComponent} from "./feature/message/message.component";
 
 @NgModule({
   declarations: [

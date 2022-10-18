@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Hero} from "../shared/hero";
+import {IHero} from "../../../shared/heroes/interface/IHero";
 
 @Component({
   selector: 'app-hero-detail',
@@ -8,7 +8,7 @@ import {Hero} from "../shared/hero";
 })
 export class HeroDetailComponent implements OnInit {
 
-  @Input() hero?: Hero;
+  @Input() hero?: IHero;
 
   constructor() {
   }

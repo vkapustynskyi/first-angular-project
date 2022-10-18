@@ -19,6 +19,11 @@ export class HeroService {
   constructor(private messageService: MessageService) {
   }
 
+  public getHero(id: number): Observable<IHero> {
+    const hero = this.heroes.find(hero => hero.id === id)!;
+    return of(hero);
+  }
+
   public getHeroes(): Observable<IHero[]> {
     const heroes = of(this.heroes);
     this.messageService.add("Heroes fetched successfully");

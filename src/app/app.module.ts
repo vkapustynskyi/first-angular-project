@@ -6,17 +6,21 @@ import {HeroesComponent} from './feature/heroes/heroes.component';
 import {FormsModule} from "@angular/forms";
 import {HeroDetailComponent} from './feature/heroes/hero-detail/hero-detail.component';
 import {MessageComponent} from "./feature/message/message.component";
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './feature/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessageComponent
+    MessageComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

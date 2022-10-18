@@ -8,6 +8,7 @@ import {HeroDetailComponent} from './feature/heroes/hero-detail/hero-detail.comp
 import {MessageComponent} from "./feature/message/message.component";
 import { AppRoutingModule } from './app-routing.module';
 import { DashboardComponent } from './feature/dashboard/dashboard.component';
+import { DashboardRoutingModule } from './feature/dashboard/dashboard-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DashboardComponent } from './feature/dashboard/dashboard.component';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DashboardRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
